@@ -1,0 +1,316 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 125%;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5%;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.5%;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+::selection {
+  color: #000000; 
+  background-color: #9c9a00; 
+}
+
+/* nav */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 15px;
+  margin: 0px;
+  border-radius: 3px;
+  transition: 300ms;
+  font-size: 150%;
+}
+
+nav ul li a:hover {
+  background-color: #9c9a00;
+  color: #333;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 250%;
+  margin-right: 30px;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+
+/* Accueil */
+.hero-image {
+  background-image: url("../assets/img/photo_finish_mod.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#services {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#a-propos {
+  background-color: #f3f3f3;
+  padding: 40px;
+}
+
+#contact {
+  background-color: #e9e9e9;
+  padding: 40px;
+}
+
+/* Contact */
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+  transition: 500ms;
+}
+
+#contact input[type="text"]:not(:hover),
+#contact input[type="email"]:not(:hover),
+#contact textarea:not(:hover) {
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  margin: 0 0 5px;
+  padding: 10px;
+  transition: 500ms;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  width: 100%;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  margin: 0 0 5px;
+  padding: 10px;
+  transition: 500ms;
+  border: 2px solid #9c9a00;
+}
+
+#contact textarea {
+  height: 200px;
+  max-width: 100%;
+
+}
+
+form button:not(:hover) {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+form button:hover {
+  background-color: #9c9a00;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 6%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-infos {
+  margin-left: 15%;
+}
+
+.horaires-infos {
+  margin-right: 15%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1405px) {
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 15%;
+  }
+
+  .logo img {
+    width: 80%; 
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 300ms;
+    font-size: 150%;
+    margin-right: 100px;
+  }
+
+  nav ul li a:hover {
+    background-color: #9c9a00;
+  }
+
+  nav h1 {
+    color: #fff;
+    font-size: 200%; 
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 5%;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+}
+
+
+@media only screen and (max-width: 967px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin-right: 0;
+  }
+
+
+
+  footer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .contact-infos,
+  .horaires-infos {
+    margin: 30px 0;
+  }
+
+  .contact-infos{
+    margin-bottom: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
+
